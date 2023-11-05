@@ -142,8 +142,9 @@ float Distance_test()
 */
 int main()
 {
+  using namespace std;
   float distance;
-  printf("Hello from C program!\n");
+  std::cout << "Hello from C++ program!" << std::endl;
   //Initialize wiringPi
   wiringPiSetup();
 
