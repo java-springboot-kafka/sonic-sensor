@@ -3,7 +3,7 @@
       {
         "target_name": "sonic-sensor",
         "sources": [
-          "src/sonic-sensor.c"
+          "src/sonic-sensor.cc"
         ],
         "include_dirs": [
           "<!@(node -p \"require('nan')\")",
