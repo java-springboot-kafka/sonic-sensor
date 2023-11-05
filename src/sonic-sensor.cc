@@ -140,8 +140,7 @@ float Distance_test()
 * @retval        void
 * @par History
 */
-int main()
-{
+int main() {
   using namespace std;
   float distance;
   //std::cout << "Hello from C++ program!" << std::end;
@@ -152,12 +151,9 @@ int main()
   pinMode(EchoPin, INPUT);
   pinMode(TrigPin, OUTPUT);
 
-  while(1)
-  {
-   delay(5000);
-   distance = Distance_test();
-   printf("%f\n",distance);
- }
- return 0;
+
+  delay(5000);
+  distance = Distance_test();
+  return distance;
 }
 
