@@ -144,7 +144,7 @@ int main()
 {
   using namespace std;
   float distance;
-  std::cout << "Hello from C++ program!" << std::endl;
+  std::cout << "Hello from C++ program!" << std::end;
   //Initialize wiringPi
   wiringPiSetup();
 
