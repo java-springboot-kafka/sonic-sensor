@@ -34,7 +34,7 @@ float Distance()
 	gettimeofday(&tv3, NULL);
 
 	start = tv3.tv_sec * 1000000 + tv3.tv_usec;
-	while(!digitalRead(EchoPin) == 1)
+	while(!(digitalRead(EchoPin) == 1))
 	{
 		gettimeofday(&tv4, NULL);
 		stop = tv4.tv_sec * 1000000 + tv4.tv_usec;
@@ -46,7 +46,7 @@ float Distance()
 
  	gettimeofday(&tv1, NULL);
         start = tv1.tv_sec*1000000+tv1.tv_usec;
-	while(!digitalRead(EchoPin) == 0)
+	while(!(digitalRead(EchoPin) == 0))
 	{
 		gettimeofday(&tv3,NULL);
 		stop = tv3.tv_sec*1000000+tv3.tv_usec;
@@ -116,7 +116,7 @@ float Distance_test()
 		 distance = Distance();
 	 }
     //Filter out data greater than 500 or smaller than 0 in the test distance
-    while ( (int)distance >= 500 || (int)distance == 0)
+    while ((int)distance >= 500 || (int)distance == 0)
     {
          distance = Distance();
     }
