@@ -1,0 +1,28 @@
+{
+  "name": "node-red-contrib-weather-data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha \"test/**/*_spec.js\""
+  },
+  "node-red": {
+    "nodes": {
+      "weather-data": "weather.js"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-addon-api": "^7.0.0",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "dotenv": "^16.3.1",
+    "mocha": "10.1.0",
+    "chai": "^4.3.10",
+    "node-red": "^2.2.3",
+    "node-red-node-test-helper": "^0.2.7"
+  }
+}
